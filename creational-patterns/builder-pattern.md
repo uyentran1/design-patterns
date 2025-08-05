@@ -1,4 +1,6 @@
 # Builder Pattern
+This lesson discusses how complex objects can be represented and constructed without coupling the two operations.
+
 
 ## What is it?
 As the name implies, a builder pattern is used to build objects. Sometimes, the objects we create can be complex, made up of several sub-objects or require an elaborate construction process. The exercise of creating complex types can be simplified by using the builder pattern. A *composite* or an *aggregate* object is what a builder generally builds.
@@ -57,7 +59,7 @@ Now we'll implement two concrete builders, one for F-16 and one for Boeing-747.
 public class Boeing747Builder extends AircraftBuilder {
     Boeing747 boeing747;
 
-    @Overrid
+    @Override
     public void buildCockpit() {
 
     }
